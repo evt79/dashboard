@@ -1,0 +1,78 @@
+{
+  "report": {
+    "locale": "es",
+    "theme": {
+      "primaryColor": "#1a73e8",
+      "backgroundColor": "#ffffff",
+      "textColor": "#202124"
+    },
+    "pages": [
+      {
+        "name": "TraderVue Dashboard",
+        "components": [
+          {
+            "type": "scorecard",
+            "title": "Win Rate %",
+            "data": {
+              "source": "Metrics",
+              "field": "Win Rate %"
+            },
+            "style": {
+              "fontSize": 20,
+              "color": "#34a853"
+            }
+          },
+          {
+            "type": "scorecard",
+            "title": "Profit Factor",
+            "data": {
+              "source": "Metrics",
+              "field": "Profit Factor"
+            },
+            "style": {
+              "fontSize": 20,
+              "color": "#fbbc05"
+            }
+          },
+          {
+            "type": "scorecard",
+            "title": "Net Profit",
+            "data": {
+              "source": "Metrics",
+              "field": "Net Profit"
+            },
+            "style": {
+              "fontSize": 20,
+              "color": "#ea4335"
+            }
+          },
+          {
+            "type": "line_chart",
+            "title": "Equity Curve",
+            "data": {
+              "source": "Dashboard",
+              "dimension": "Trade #",
+              "metric": "Equity"
+            },
+            "style": {
+              "lineColor": "#1a73e8",
+              "lineWidth": 2
+            }
+          },
+          {
+            "type": "bar_chart",
+            "title": "Drawdown",
+            "data": {
+              "source": "Dashboard",
+              "dimension": "Trade #",
+              "metric": "Drawdown"
+            },
+            "style": {
+              "barColor": "#ea4335"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
